@@ -7,7 +7,7 @@ Bootstrap DatePicker Thai Buddhist-Era (B.E.) Widget for Yii2
 
 This is thai buddhist calendar datepicker of Yii2 extension. modified from (https://github.com/2amigos/yii2-date-picker-widget)
 
-Renders a [bootstrap-datepicker](http://bootstrap-datepicker.readthedocs.io/en/latest/index.html).
+Renders a [bootstrap-datepicker](http://bootstrap-datepicker.readthedocs.io).
 
 Installation
 ------------
