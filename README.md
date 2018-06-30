@@ -1,6 +1,7 @@
 Bootstrap DatePicker Thai Buddhist-Era (B.E.) Widget for Yii2
 ====================================
 
+[![Latest Version](https://img.shields.io/github/tag/karatae99/yii2-date-picker-thai-widget.svg?style=flat-square&label=release)](https://packagist.org/packages/karatae99/yii2-date-picker-thai-widget)
 [![License](https://poser.pugx.org/karatae99/yii2-date-picker-thai-widget/license)](https://packagist.org/packages/karatae99/yii2-date-picker-thai-widget)
 [![Total Downloads](https://poser.pugx.org/karatae99/yii2-date-picker-thai-widget/downloads)](https://packagist.org/packages/karatae99/yii2-date-picker-thai-widget)
 
