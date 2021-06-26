@@ -49,10 +49,10 @@ use karatae99\datepicker\DatePicker;
     'model' => $model,
     'attribute' => 'date',
     'template' => '{addon}{input}',
-	'language' => 'th', // Thai B.E.
+	'language' => 'th', 				//<-- Thai B.E.
         'clientOptions' => [
             'autoclose' => true,
-            'format' => 'dd/mm/yyyy'
+            'format' => 'dd/mm/yyyy' 	//<-- Thai B.E.
         ]
 ]);?>
 
@@ -65,10 +65,10 @@ use karatae99\datepicker\DatePicker;
         'inline' => true, 
         // modify template for custom rendering
         'template' => '<div class="well well-sm" style="background-color: #fff; width:250px">{input}</div>',
-	'language' => 'th', // Thai B.E.
+		'language' => 'th', 			//<-- Thai B.E.
         'clientOptions' => [
             'autoclose' => true,
-            'format' => 'dd/mm/yyyy'
+            'format' => 'dd/mm/yyyy' 	//<-- Thai B.E.
         ]
 ]);?>
 ```  
@@ -82,11 +82,47 @@ use karatae99\datepicker\DatePicker;
     'name' => 'Test',
     'value' => '20/03/2561',
     'template' => '{addon}{input}',
-	'language' => 'th', // Thai B.E.
+	'language' => 'th', 				//<-- Thai B.E.
         'clientOptions' => [
             'autoclose' => true,
-            'format' => 'dd/mm/yyyy'
+            'format' => 'dd/mm/yyyy' 	//<-- Thai B.E.
         ]
+]);?>
+```
+
+**DateRangePicker**  
+
+This widget renders a Bootstrap DateRangePicker Input control. 
+
+***Example of use with a form***  
+The following example works with a model that has two attributes named `date_from` and `date_to`.
+
+```php
+<?php
+use karatae99\datepicker\DatePicker;
+?>
+<?= $form->field($model, 'date_from')->widget(DateRangePicker::className(), [
+    'attributeTo' => 'date_to', 
+    'form' => $form, // best for correct client validation
+    'language' => 'th', 				//<-- Thai B.E.
+    'size' => 'lg',
+		'clientOptions' => [
+			'autoclose' => true,
+			'format' => 'dd/mm/yyyy' 	//<-- Thai B.E.
+		]
+]);?>
+```  
+***Example of use without a model***
+
+```php  
+<?php
+use dosamigos\datepicker\DateRangePicker;
+?>
+<?= DateRangePicker::widget([
+    'name' => 'date_from',
+    'value' => '02-16-2012',
+    'nameTo' => 'name_to',
+    'valueTo' => '02-20-2012'
 ]);?>
 ```
 
