@@ -112,19 +112,7 @@ use karatae99\datepicker\DateRangePicker;
 		]
 ]);?>
 ```  
-***Example of use without a model***
 
-```php  
-<?php
-use dosamigos\datepicker\DateRangePicker;
-?>
-<?= DateRangePicker::widget([
-    'name' => 'date_from',
-    'value' => '02-16-2012',
-    'nameTo' => 'name_to',
-    'valueTo' => '02-20-2012'
-]);?>
-```
 
 
 Further Information
