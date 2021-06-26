@@ -99,7 +99,7 @@ The following example works with a model that has two attributes named `date_fro
 
 ```php
 <?php
-use karatae99\datepicker\DatePicker;
+use karatae99\datepicker\DateRangePicker;
 ?>
 <?= $form->field($model, 'date_from')->widget(DateRangePicker::className(), [
     'attributeTo' => 'date_to', 
