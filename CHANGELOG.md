@@ -5,7 +5,7 @@
 
 **Date:** 26-Jun-2021
 
-- (bug #1): Add support for Thai year format (Buddhist Era) in DateRangePicker. 
+- (bug #1): Add support for Thai year format (Buddhist Era) in DateRangePicker.
 
 ## version 1.0.1
 
