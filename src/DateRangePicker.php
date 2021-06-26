@@ -123,8 +123,13 @@ class DateRangePicker extends InputWidget
         $view = $this->getView();
 
         // @codeCoverageIgnoreStart
-        if($this->language !== null) {
+        if ($this->language !== null && $this->language !== 'en') {
             $this->clientOptions['language'] = $this->language;
+			
+			if ($this->language === 'th') { 
+                DateRangePickerAsset::register($view)->js[] = 'js/bootstrap-datepicker-thai.js';
+            }  
+			
             DatePickerLanguageAsset::register($view)->js[] = 'bootstrap-datepicker.' . $this->language . '.min.js';
         } else {
             DateRangePickerAsset::register($view);
