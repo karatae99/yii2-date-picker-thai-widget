@@ -49,10 +49,10 @@ use karatae99\datepicker\DatePicker;
     'model' => $model,
     'attribute' => 'date',
     'template' => '{addon}{input}',
-	'language' => 'th', 				//<-- Thai B.E.
+	'language' => 'th', 	     //<-- Thai B.E.
         'clientOptions' => [
             'autoclose' => true,
-            'format' => 'dd/mm/yyyy' 	//<-- Thai B.E.
+            'format' => 'dd/mm/yyyy' //<-- Thai B.E.
         ]
 ]);?>
 
@@ -65,7 +65,7 @@ use karatae99\datepicker\DatePicker;
         'inline' => true, 
         // modify template for custom rendering
         'template' => '<div class="well well-sm" style="background-color: #fff; width:250px">{input}</div>',
-		'language' => 'th', 			//<-- Thai B.E.
+		'language' => 'th', 	//<-- Thai B.E.
         'clientOptions' => [
             'autoclose' => true,
             'format' => 'dd/mm/yyyy' 	//<-- Thai B.E.
@@ -82,10 +82,10 @@ use karatae99\datepicker\DatePicker;
     'name' => 'Test',
     'value' => '20/03/2561',
     'template' => '{addon}{input}',
-	'language' => 'th', 				//<-- Thai B.E.
+	'language' => 'th', 	      //<-- Thai B.E.
         'clientOptions' => [
             'autoclose' => true,
-            'format' => 'dd/mm/yyyy' 	//<-- Thai B.E.
+            'format' => 'dd/mm/yyyy'  //<-- Thai B.E.
         ]
 ]);?>
 ```
@@ -104,11 +104,11 @@ use karatae99\datepicker\DatePicker;
 <?= $form->field($model, 'date_from')->widget(DateRangePicker::className(), [
     'attributeTo' => 'date_to', 
     'form' => $form, // best for correct client validation
-    'language' => 'th', 				//<-- Thai B.E.
+    'language' => 'th', 			//<-- Thai B.E.
     'size' => 'lg',
 		'clientOptions' => [
 			'autoclose' => true,
-			'format' => 'dd/mm/yyyy' 	//<-- Thai B.E.
+			'format' => 'dd/mm/yyyy' //<-- Thai B.E.
 		]
 ]);?>
 ```  
